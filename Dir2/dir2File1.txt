@@ -1,0 +1,4 @@
+added one line 
+git status willy show that this file has changed because it is being
+tracked.
+Let try more
