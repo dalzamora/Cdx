@@ -1,0 +1,17 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Sun Aug 23 13:31:57 2015
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/fedora-root /                       ext4    defaults        1 1
+UUID=5a49b706-93da-49a6-9742-057235b81139 /boot                   ext4    defaults        1 2
+/dev/mapper/fedora-home /home                   ext4    defaults        1 2
+/dev/mapper/fedora-swap swap                    swap    defaults        0 0
+#/dev/sdb1 		/w 			btrfs	defaults	0 0
+#/dev/sdb1 		/w 			btrfs	noauto	0 0
+//192.168.250.100/iTunes	/mnt/iTunes	cifs	noauto,user=dac,pass=dac111	0	0
+//192.168.250.100/FAM_PICS      /mnt/FAM_PICS   cifs    noauto,user=dac,pass=dac111     0       0
+#mount -t cifs //192.168.250.100/iTunes /mnt/iTunes --verbose -o user=dac
